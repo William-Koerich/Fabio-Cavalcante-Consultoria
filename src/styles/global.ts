@@ -7,4 +7,13 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-size: 62.5%;
     }
+
+    :root {
+        --gold: #D3BA4A;
+        --navy-blue: #003153;
+        --blue: #5D89BA;
+        --grey: #2F4F4F;
+        --pink: #FAEBD7;
+        --background: #F1F5F7;
+    }
 `;
