@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   display: flex;
@@ -24,8 +24,8 @@ export const MenuButton = styled.button`
   cursor: pointer;
 `;
 
-export const MenuOptions = styled.ul<{ isOpen: boolean }>`
-  display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+export const MenuOptions = styled.ul<{ $isOpen: boolean }>`
+  display: ${({ $isOpen }) => ($isOpen ? "block" : "none")};
   position: absolute;
   top: 100%;
   right: 0;
