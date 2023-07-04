@@ -1,5 +1,6 @@
 import { GlobalStyle } from "@/styles/global";
 import Head from "next/head";
+import { Header } from "../components/Header"
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Fabio consultoria</h1>
+        <Header />
       </main>
     </>
   );
