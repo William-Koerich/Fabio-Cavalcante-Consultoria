@@ -15,4 +15,5 @@ export const Button = styled.button<{
   font-size: 16px;
   font-weight: ${({ $fontWeight }) => ($fontWeight ? $fontWeight : "700")};
   align-items: center;
+  cursor: pointer;
 `;
