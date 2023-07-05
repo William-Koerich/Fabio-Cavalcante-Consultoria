@@ -1,7 +1,7 @@
 import { useState } from "react";
 import * as S from "./styles";
-import { MenuIcon } from "../../../public/assets";
-import { Logo } from "../../../public/assets";
+import { MenuIcon } from "@/assets";
+import { Logo } from "@/assets";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
