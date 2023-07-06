@@ -7,6 +7,7 @@ interface IProps {
   fontWeight?: string;
   textColor?: string;
   borderColor?: string;
+  borderRadius?: string;
 }
 
 export function Button({
@@ -15,6 +16,7 @@ export function Button({
   fontWeight,
   textColor,
   borderColor,
+  borderRadius,
 }: IProps) {
   return (
     <S.Button
@@ -22,6 +24,7 @@ export function Button({
       $fontWeight={fontWeight}
       $textColor={textColor}
       $borderColor={borderColor}
+      $borderRadius={borderRadius}
     >
       {children}
     </S.Button>

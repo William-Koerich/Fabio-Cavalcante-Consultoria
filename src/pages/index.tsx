@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Header } from "@/components/global/Header";
 import { Partners } from "@/components/pages/home/Partners";
+import { Form } from "@/components/pages/home/Form";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Header />
         <Partners />
+        <Form />
       </main>
     </>
   );
