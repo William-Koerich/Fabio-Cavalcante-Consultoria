@@ -23,16 +23,32 @@ export const MenuButton = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: relative;
 `;
 
 export const MenuOptions = styled.ul<{ $isOpen: boolean }>`
   display: ${({ $isOpen }) => ($isOpen ? "block" : "none")};
   position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: pink;
+  background-color: var(--background);
   padding: 8px;
   list-style-type: none;
+  z-index: 999;
+
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: transform 300ms;
+  transform: translateY(0);
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  margin-top: 6rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  
 `;
 
 export const MenuItem = styled.li`
