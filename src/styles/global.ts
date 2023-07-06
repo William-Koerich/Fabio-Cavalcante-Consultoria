@@ -17,5 +17,6 @@ export const GlobalStyle = createGlobalStyle`
         --white: #FFFF;
         --background: #F1F5F7;
         --light-gray: #CCCCCC;
+        --gray: #7d7e87;
     }
 `;
