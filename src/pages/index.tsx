@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Header } from "@/components/global/Header";
 import { Partners } from "@/components/pages/home/Partners";
 import { Form } from "@/components/pages/home/Form";
+import { HeroSection } from "@/components/pages/home/HeroSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <main>
         <Header />
+        <HeroSection />
         <Partners />
         <Form />
       </main>
