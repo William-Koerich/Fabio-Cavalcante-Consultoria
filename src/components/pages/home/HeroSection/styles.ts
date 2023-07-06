@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.main`
   width: 100%;
-  height: 63rem;
+  height: 55rem;
 `;
 
 export const LeftContainer = styled.div`
