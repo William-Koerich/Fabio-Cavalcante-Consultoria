@@ -4,6 +4,7 @@ export const Button = styled.button<{
   $bgColor?: string;
   $fontWeight?: string;
   $textColor?: string;
+  $borderColor?: string;
 }>`
   width: 100%;
   height: 5.25rem;
@@ -15,5 +16,7 @@ export const Button = styled.button<{
   font-size: 16px;
   font-weight: ${({ $fontWeight }) => ($fontWeight ? $fontWeight : "700")};
   align-items: center;
+  border: 1px solid
+    ${({ $borderColor }) => ($borderColor ? $borderColor : "var(--navy-blue)")};
   cursor: pointer;
 `;
