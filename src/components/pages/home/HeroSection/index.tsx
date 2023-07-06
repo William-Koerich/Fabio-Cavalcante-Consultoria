@@ -17,13 +17,28 @@ export function HeroSection() {
             varius enim in eros elementum tristique. Duis cursus, mi quis
             viverra ornare. Cras eu consequat est.
           </p>
+          <S.ButtonContainer>
+            <Button borderColor="var(--gold)">Contato</Button>
+            <Button bgColor="transparent" textColor="var(--navy-blue)">
+              Quem somos
+            </Button>
+          </S.ButtonContainer>
         </div>
-        <S.ButtonContainer>
-          <Button borderColor="var(--gold)">Contato</Button>
-          <Button bgColor="transparent" textColor="var(--navy-blue)">
-            Quem somos
-          </Button>
-        </S.ButtonContainer>
+
+        <S.FactsContainer>
+          <S.FactsItem>
+            <p className="text">456K</p>
+            <h6 className="heading">CASE WINS</h6>
+          </S.FactsItem>
+          <S.FactsItem>
+            <p className="text">253K</p>
+            <h6 className="heading">CASE WINS</h6>
+          </S.FactsItem>
+          <S.FactsItem>
+            <p className="text">368K</p>
+            <h6 className="heading">CASE WINS</h6>
+          </S.FactsItem>
+        </S.FactsContainer>
       </S.LeftContainer>
       <S.RightContainer></S.RightContainer>
     </S.Container>
