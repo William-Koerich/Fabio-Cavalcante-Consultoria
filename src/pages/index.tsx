@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Header } from "@/components/global/Header";
+import { Partners } from "@/components/pages/home/Partners";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <Header />
+        <Partners />
       </main>
     </>
   );
