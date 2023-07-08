@@ -6,6 +6,7 @@ import { Form } from "@/components/pages/home/Form";
 import { HeroSection } from "@/components/pages/home/HeroSection";
 import { ServiceSection } from "@/components/pages/home/ServiceSection";
 import { Footer } from "@/components/global/Footer";
+import { News } from "@/components/pages/home/News";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Partners />
         <ServiceSection />
         <Form />
+        <News />
       </S.Main>
       <Footer />
     </>
