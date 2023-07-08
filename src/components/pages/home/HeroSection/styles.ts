@@ -44,7 +44,7 @@ export const LeftContainer = styled.div`
     }
     .paragraph {
       font-size: 1.6rem;
-      color: var(--gray);
+      color: var(--gray-paragraph);
       font-weight: 400;
       font-family: "Roboto", sans-serif;
       margin: 1rem 0 1rem 0;

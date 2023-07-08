@@ -28,7 +28,7 @@ export const Container = styled.section`
   }
   .paragraph {
     font-size: 1.6rem;
-    color: var(--gray);
+    color: var(--gray-paragraph);
     font-weight: 400;
     font-family: "Roboto", sans-serif;
   }
