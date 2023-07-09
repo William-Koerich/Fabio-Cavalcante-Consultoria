@@ -1,4 +1,4 @@
-import * as S from "./styles";
+import * as S from "./style";
 import Link from "next/link";
 
 export function ServiceSection() {

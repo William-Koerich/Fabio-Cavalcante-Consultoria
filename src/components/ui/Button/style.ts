@@ -20,5 +20,5 @@ export const Button = styled.button<{
   border: 1px solid
     ${({ $borderColor }) => ($borderColor ? $borderColor : "var(--navy-blue)")};
   cursor: pointer;
-  border-radius: ${({$borderRadius}) => ($borderRadius)};
+  border-radius: ${({ $borderRadius }) => $borderRadius};
 `;
