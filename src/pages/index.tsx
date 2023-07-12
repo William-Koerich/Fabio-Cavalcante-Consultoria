@@ -7,6 +7,7 @@ import { HeroSection } from "@/components/pages/home/HeroSection";
 import { ServiceSection } from "@/components/pages/home/ServiceSection";
 import { Footer } from "@/components/global/Footer";
 import { News } from "@/components/pages/home/News";
+import { FeatureSection } from "@/components/pages/home/FeatureSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Header />
       <S.Main>
         <HeroSection />
+        <FeatureSection />
         <Partners />
         <ServiceSection />
         <Form />
