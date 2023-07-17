@@ -1,20 +1,21 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
+  height: 100%;
   background-color: var(--navy-blue);
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  
-  @media (min-width: 1024px) {
-      display: flex;
-      justify-content: space-evenly;
-      flex-direction: row;
-      align-items: center;
 
-      .credits {
-        display: none;
-      };
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+
+    .credits {
+      display: none;
+    }
   }
 `;
 
@@ -23,7 +24,7 @@ export const SocialLinks = styled.div`
   justify-content: center;
   margin-bottom: 0.8rem;
   margin-top: 1rem;
-  
+
   .container-credits {
     span {
       display: none;
@@ -31,12 +32,12 @@ export const SocialLinks = styled.div`
   }
 
   @media (min-width: 1024px) {
-      .container-credits {
-        span {
-          display: flex;
-          margin-top: 1rem;
-        }
-      };
+    .container-credits {
+      span {
+        display: flex;
+        margin-top: 1rem;
+      }
+    }
   }
 `;
 
@@ -48,7 +49,6 @@ export const SocialLink = styled.a`
   font-family: Roboto;
   font-weight: bold;
   cursor: pointer;
-  
 `;
 
 export const Credits = styled.span`
@@ -60,10 +60,9 @@ export const Credits = styled.span`
     color: var(--gold);
   }
   @media (min-width: 1024px) {
-      display: flex;
-      align-items: center;
-    }
-
+    display: flex;
+    align-items: center;
+  }
 `;
 
 export const NewsletterForm = styled.form`
@@ -73,11 +72,10 @@ export const NewsletterForm = styled.form`
   margin-bottom: 0.8rem;
   flex-direction: column;
   margin-top: 1rem;
-  
+
   @media (min-width: 1024px) {
     flex-direction: row;
   }
-  
 `;
 
 export const NewsletterInput = styled.input`
@@ -90,7 +88,7 @@ export const NewsletterInput = styled.input`
   @media (min-width: 1024px) {
     width: 36rem;
     margin-right: 1rem;
-  };
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -100,5 +98,3 @@ export const ButtonContainer = styled.div`
     width: 10rem;
   }
 `;
-
-
