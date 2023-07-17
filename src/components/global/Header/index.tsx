@@ -3,6 +3,8 @@ import * as S from "./styles";
 import { MenuIcon } from "@/assets";
 import { Logo } from "@/assets";
 
+import Link from "next/link";
+
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,13 +19,25 @@ export function Header() {
       <S.MenuButton onClick={toggleMenu}>
         <MenuIcon />
       </S.MenuButton>
-      <S.MenuOptions $isOpen={isMenuOpen}>
-        <S.MenuItem>Home</S.MenuItem>
-        <S.MenuItem>Serviços</S.MenuItem>
-        <S.MenuItem>Clientes</S.MenuItem>
-        <S.MenuItem>Sobre</S.MenuItem>
-        <S.MenuItem>Contato</S.MenuItem>
-        <S.MenuItem>Notícias</S.MenuItem>
+      <S.MenuOptions $isOpen={isMenuOpen} onClick={toggleMenu}>
+        <Link className="menu-item" href="/">
+          Home
+        </Link>
+        <Link className="menu-item" href="/">
+          Serviços
+        </Link>
+        <Link className="menu-item" href="/">
+          Clientes
+        </Link>
+        <Link className="menu-item" href="/">
+          Sobre
+        </Link>
+        <Link className="menu-item" href="/blog">
+          Notícias
+        </Link>
+        <Link className="menu-item" href="/">
+          Contato
+        </Link>
       </S.MenuOptions>
     </S.HeaderContainer>
   );

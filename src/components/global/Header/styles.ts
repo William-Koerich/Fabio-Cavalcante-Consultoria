@@ -27,13 +27,12 @@ export const MenuButton = styled.button`
 `;
 
 export const MenuOptions = styled.ul<{ $isOpen: boolean }>`
-  display: ${({ $isOpen }) => ($isOpen ? "block" : "none")};
+  display: ${({ $isOpen }) => ($isOpen ? "flex" : "none")};
   position: absolute;
   background-color: var(--background);
   padding: 8px;
   list-style-type: none;
   z-index: 999;
-
   overflow: hidden;
   top: 0;
   left: 0;
@@ -42,15 +41,17 @@ export const MenuOptions = styled.ul<{ $isOpen: boolean }>`
   transition: transform 300ms;
   transform: translateY(0);
   flex-direction: column;
-  align-items:center;
-  justify-content: center;
+  align-items: center;
   margin-top: 6rem;
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.1rem;
-  
-`;
+  padding: 2rem;
 
-export const MenuItem = styled.li`
-  padding: 8px;
+  .menu-item {
+    font-family: "Roboto", sans-serif;
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
 `;
