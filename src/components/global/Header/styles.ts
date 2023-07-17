@@ -37,21 +37,27 @@ export const MenuOptions = styled.ul<{ $isOpen: boolean }>`
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
   transition: transform 300ms;
   transform: translateY(0);
+  justify-content: start;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  gap: 1.6rem;
   margin-top: 6rem;
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.1rem;
   padding: 2rem;
 
-  .menu-item {
+  .menu-item,
+  li {
     font-family: "Roboto", sans-serif;
     color: var(--gray);
     text-decoration: none;
     font-size: 1.6rem;
+    cursor: pointer;
+    :hover {
+      opacity: 0.7;
+    }
   }
 `;

@@ -21,22 +21,22 @@ export function Header() {
       </S.MenuButton>
       <S.MenuOptions $isOpen={isMenuOpen} onClick={toggleMenu}>
         <Link className="menu-item" href="/">
-          Home
+          <li>Home</li>
         </Link>
         <Link className="menu-item" href="/">
-          Serviços
+          <li>Serviços</li>
         </Link>
         <Link className="menu-item" href="/">
-          Clientes
+          <li>Clientes</li>
         </Link>
         <Link className="menu-item" href="/">
-          Sobre
+          <li>Sobre</li>
         </Link>
         <Link className="menu-item" href="/blog">
-          Notícias
+          <li>Notícias</li>
         </Link>
         <Link className="menu-item" href="/">
-          Contato
+          <li>Contato</li>
         </Link>
       </S.MenuOptions>
     </S.HeaderContainer>
