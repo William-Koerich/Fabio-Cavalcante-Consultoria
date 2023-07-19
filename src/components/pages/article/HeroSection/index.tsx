@@ -2,6 +2,7 @@ import * as S from "./style";
 
 interface IProps {
   title: string;
+  bannerUrl?: string;
 }
 
 export function HeroSection({ title }: IProps) {

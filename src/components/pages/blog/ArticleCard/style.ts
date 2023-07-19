@@ -5,6 +5,10 @@ export const Article = styled.article`
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
 `;
 
 export const ArticleImage = styled.div`
