@@ -22,12 +22,7 @@ export function News() {
             Show All News Posts
           </Link>
           <S.NewsImage>
-            <Image
-              src="/images/news1.png"
-              alt="News"
-              layout="fill"
-              objectFit="cover"
-            />
+            <Image src="/images/news1.png" alt="News" fill={true} />
           </S.NewsImage>
           <S.NewsDate>July 3, 2020</S.NewsDate>
           <S.NewsTitle>
@@ -43,12 +38,7 @@ export function News() {
           </S.NewsDescription>
 
           <S.NewsImage>
-            <Image
-              src="/images/news2.png"
-              alt="News"
-              layout="fill"
-              objectFit="cover"
-            />
+            <Image src="/images/news2.png" alt="News" fill={true} />
           </S.NewsImage>
           <S.NewsDate>July 3, 2020</S.NewsDate>
           <S.NewsTitle>
@@ -64,12 +54,7 @@ export function News() {
           </S.NewsDescription>
 
           <S.NewsImage>
-            <Image
-              src="/images/news3.png"
-              alt="News"
-              layout="fill"
-              objectFit="cover"
-            />
+            <Image src="/images/news3.png" alt="News" fill={true} />
           </S.NewsImage>
           <S.NewsDate>July 3, 2020</S.NewsDate>
           <S.NewsTitle>
@@ -85,12 +70,7 @@ export function News() {
           </S.NewsDescription>
 
           <S.NewsImage>
-            <Image
-              src="/images/news4.png"
-              alt="News"
-              layout="fill"
-              objectFit="cover"
-            />
+            <Image src="/images/news4.png" alt="News" fill={true} />
           </S.NewsImage>
           <S.NewsDate>July 3, 2020</S.NewsDate>
           <S.NewsTitle>

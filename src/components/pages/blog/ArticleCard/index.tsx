@@ -12,7 +12,7 @@ export function ArticleCard({}: IProps) {
   return (
     <S.Article>
       <S.ArticleImage>
-        <Image src="/images/news1.png" layout={"fill"} alt="News" />
+        <Image src="/images/news1.png" fill={true} alt="News" />
       </S.ArticleImage>
       <S.ArticleDate>July 3, 2020</S.ArticleDate>
       <S.ArticleTitle>
