@@ -1,10 +1,18 @@
+import { GetStaticProps } from "next";
+import prisma from "@/lib/prisma";
+
 import { HeroSection } from "@/components/pages/blog/HeroSection";
 import { Header } from "@/components/global/Header";
 import { NewsSection } from "@/components/pages/blog/NewsSection";
 import { Footer } from "@/components/global/Footer";
 import { Articles } from "@/components/pages/blog/Articles";
+import { Article } from "@/interfaces/articles";
 
-export default function Blog() {
+interface IProps {
+  articles: Article;
+}
+
+export default function Blog({ articles }: IProps) {
   return (
     <>
       <Header />
@@ -15,3 +23,11 @@ export default function Blog() {
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const articles = prisma.post.findMany({});
+  return {
+    props: {},
+    revalidate: 10,
+  };
+};
