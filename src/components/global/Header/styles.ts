@@ -7,6 +7,9 @@ export const HeaderContainer = styled.header`
   padding: 16px;
   background-color: var(--background);
   position: relative;
+  @media screen and (min-width: 968px) {
+    padding: 2rem 3rem;
+  }
 `;
 
 export const Logo = styled.div`
@@ -24,6 +27,9 @@ export const MenuButton = styled.button`
   justify-content: center;
   cursor: pointer;
   position: relative;
+  @media screen and (min-width: 968px) {
+    display: none;
+  }
 `;
 
 export const MenuOptions = styled.ul<{ $isOpen: boolean }>`
@@ -59,5 +65,15 @@ export const MenuOptions = styled.ul<{ $isOpen: boolean }>`
     :hover {
       opacity: 0.7;
     }
+  }
+
+  @media screen and (min-width: 968px) {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
   }
 `;
