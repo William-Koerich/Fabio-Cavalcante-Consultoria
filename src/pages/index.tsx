@@ -9,6 +9,7 @@ import { Footer } from "@/components/global/Footer";
 import { News } from "@/components/pages/home/News";
 import { FeatureSection } from "@/components/pages/home/FeatureSection";
 import { CookieConsent } from "@/components/shared/cookieConsent";
+import { Testimonial } from "@/components/pages/home/Testimonial";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Partners />
         <ServiceSection />
         <Form />
+        <Testimonial />
         <News />
       </S.Main>
       <Footer />
