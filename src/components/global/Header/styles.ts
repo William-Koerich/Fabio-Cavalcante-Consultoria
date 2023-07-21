@@ -1,14 +1,21 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
+  position: relative;
+  background-color: var(--background);
+  @media screen and (min-width: 968px) {
+    padding: 2rem 3rem;
+  }
+`;
+
+export const MainContainer = styled.div`
+  max-width: 1240px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
-  background-color: var(--background);
-  position: relative;
-  @media screen and (min-width: 968px) {
-    padding: 2rem 3rem;
+  margin: 0 auto;
+  @media screen and (max-width: 968px) {
+    padding: 2rem 2rem;
   }
 `;
 

@@ -13,32 +13,34 @@ export function Header() {
   };
   return (
     <S.HeaderContainer>
-      <S.Logo>
-        <Logo />
-      </S.Logo>
-      <S.MenuButton onClick={toggleMenu}>
-        <MenuIcon />
-      </S.MenuButton>
-      <S.MenuOptions $isOpen={isMenuOpen} onClick={toggleMenu}>
-        <Link className="menu-item" href="/">
-          <li>Home</li>
-        </Link>
-        <Link className="menu-item" href="/">
-          <li>Serviços</li>
-        </Link>
-        <Link className="menu-item" href="/">
-          <li>Clientes</li>
-        </Link>
-        <Link className="menu-item" href="/">
-          <li>Sobre</li>
-        </Link>
-        <Link className="menu-item" href="/blog">
-          <li>Notícias</li>
-        </Link>
-        <Link className="menu-item" href="/">
-          <li>Contato</li>
-        </Link>
-      </S.MenuOptions>
+      <S.MainContainer>
+        <S.Logo>
+          <Logo />
+        </S.Logo>
+        <S.MenuButton onClick={toggleMenu}>
+          <MenuIcon />
+        </S.MenuButton>
+        <S.MenuOptions $isOpen={isMenuOpen} onClick={toggleMenu}>
+          <Link className="menu-item" href="/">
+            <li>Home</li>
+          </Link>
+          <Link className="menu-item" href="/">
+            <li>Serviços</li>
+          </Link>
+          <Link className="menu-item" href="/">
+            <li>Clientes</li>
+          </Link>
+          <Link className="menu-item" href="/">
+            <li>Sobre</li>
+          </Link>
+          <Link className="menu-item" href="/blog">
+            <li>Notícias</li>
+          </Link>
+          <Link className="menu-item" href="/">
+            <li>Contato</li>
+          </Link>
+        </S.MenuOptions>
+      </S.MainContainer>
     </S.HeaderContainer>
   );
 }
