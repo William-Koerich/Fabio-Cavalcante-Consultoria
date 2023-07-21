@@ -74,6 +74,11 @@ export const LeftContainer = styled.div`
         font-family: "Roboto", sans-serif;
         margin: 1rem 0 1rem 0;
       }
+      @media screen and (min-width: 968px) {
+        .heading {
+          width: 40rem;
+        }
+      }
     }
   }
   @media screen and (max-width: 968px) {
