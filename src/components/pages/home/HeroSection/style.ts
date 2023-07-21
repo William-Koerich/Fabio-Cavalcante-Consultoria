@@ -31,6 +31,8 @@ export const Container = styled.div`
 
 export const LeftContainer = styled.div`
   display: flex;
+  left: 0;
+  margin-right: 80rem;
   flex-direction: column;
   padding: 3rem 0;
   gap: 2.5rem;
@@ -91,10 +93,19 @@ export const LeftContainer = styled.div`
   }
 `;
 export const RightContainer = styled.div`
-  width: 100%;
+  width: 49.2rem;
   height: 100%;
+  position: absolute;
+  right: 0;
+  margin-right: -8rem;
+  background-color: var(--navy-blue);
   @media screen and (max-width: 968px) {
     display: none;
+  }
+
+  @media screen and (max-width: 1280px) {
+    margin-right: -2rem;
+    width: 43rem;
   }
 `;
 
