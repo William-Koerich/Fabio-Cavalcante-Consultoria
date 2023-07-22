@@ -1,5 +1,4 @@
 import { GetStaticProps } from "next";
-import prisma from "@/lib/prisma";
 
 import { HeroSection } from "@/components/pages/blog/HeroSection";
 import { Header } from "@/components/global/Header";
@@ -25,7 +24,6 @@ export default function Blog({ articles }: IProps) {
 }
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  const articles = prisma.post.findMany({});
   return {
     props: {},
     revalidate: 10,
