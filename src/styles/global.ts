@@ -18,5 +18,7 @@ export const GlobalStyle = createGlobalStyle`
         --background: #F1F5F7;
         --light-gray: #CCCCCC;
         --gray-paragraph: #7d7e87;
+        --green: #18a118;
+        --black-green: #035e03;
     }
 `;
