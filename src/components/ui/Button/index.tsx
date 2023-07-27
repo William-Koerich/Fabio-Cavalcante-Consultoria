@@ -8,6 +8,7 @@ interface IProps {
   textColor?: string;
   borderColor?: string;
   borderRadius?: string;
+  onClick?: () => void;
 }
 
 export function Button({
@@ -17,6 +18,7 @@ export function Button({
   textColor,
   borderColor,
   borderRadius,
+  onClick,
 }: IProps) {
   return (
     <S.Button
@@ -25,6 +27,7 @@ export function Button({
       $textColor={textColor}
       $borderColor={borderColor}
       $borderRadius={borderRadius}
+      onClick={onClick}
     >
       {children}
     </S.Button>

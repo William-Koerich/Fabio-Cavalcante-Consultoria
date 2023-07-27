@@ -8,6 +8,7 @@ import { ServiceSection } from "@/components/pages/home/ServiceSection";
 import { Footer } from "@/components/global/Footer";
 import { News } from "@/components/pages/home/News";
 import { FeatureSection } from "@/components/pages/home/FeatureSection";
+import { CookieConsent } from "@/components/shared/cookieConsent";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <News />
       </S.Main>
       <Footer />
+      <CookieConsent />
     </>
   );
 }
