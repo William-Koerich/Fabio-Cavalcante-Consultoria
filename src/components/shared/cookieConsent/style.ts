@@ -17,9 +17,8 @@ export const FixedContainer = styled.div`
   bottom: 0;
   padding: 2rem 10rem;
   animation: 0.2s ${fadeIn} ease-out;
-  @media screen and (max-width: 768px) {
-    height: 25rem;
-    padding: 2rem;
+  @media screen and (max-width: 968px) {
+    height: 30rem;
   }
 `;
 
@@ -30,7 +29,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 7rem;
-  gap: 1rem;
+  gap: 2rem;
   a {
     text-decoration: none;
   }
