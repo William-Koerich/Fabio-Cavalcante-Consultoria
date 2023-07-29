@@ -17,6 +17,9 @@ export function Partners() {
                 <S.PartnerItem>
                     <Customer />
                 </S.PartnerItem>
+                <S.PartnerItem>
+                    <Customer />
+                </S.PartnerItem>
             </S.PartnersContainer>
         </>
     )
