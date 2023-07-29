@@ -14,6 +14,11 @@ export const FormContainer = styled.div`
   background-color: var(--navy-blue);
   width: 35.8rem;
   height: 43.1rem;
+
+  @media screen and (min-width:1200px){
+    width:98.4rem;
+  }
+
 `;
 
 export const Title = styled.span`
@@ -24,7 +29,7 @@ export const Title = styled.span`
 `;
 
 export const Input = styled.input`
-  width: 29.4rem;
+  width: 90%;
   height: 6.4rem;
   border-radius: 2px;
   border: 1px solid var(--light-gray);
@@ -33,5 +38,5 @@ export const Input = styled.input`
 `;
 
 export const ButtonContainer = styled.div`
-  width: 29.4rem;
+  width: 90%;
 `;
