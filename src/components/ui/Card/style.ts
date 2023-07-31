@@ -4,14 +4,14 @@ export const Container = styled.div<{
   bgColor?: string;
   borderColor?: string;
 }>`
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 4rem 2rem;
-  background-color: ${({ bgColor }) => bgColor ?? "#f1f5f7"};
-  border: 1px solid ${({ borderColor }) => borderColor ?? "#f1f5f7"};
+  /* padding: 4rem 2rem; */
+  /* background-color: ${({ bgColor }) => bgColor ?? "#f1f5f7"}; */
+  /* border: 1px solid ${({ borderColor }) => borderColor ?? "#f1f5f7"}; */
   gap: 2rem;
   .profile-container {
     display: flex;

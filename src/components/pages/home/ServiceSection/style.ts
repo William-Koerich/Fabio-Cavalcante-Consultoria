@@ -61,3 +61,12 @@ export const Container = styled.section`
     }
   }
 `;
+
+export const CardContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1.5rem;
+`;
