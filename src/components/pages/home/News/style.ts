@@ -1,26 +1,34 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const MainContainer = styled.div`
   background-color: var(--white);
-  /* display: none; */
-
-  @media (min-width: 1024px) {
-    display: flex;
-    width: 100%;
+  width: 100%;
+  @media screen and (min-width: 968px) {
     background-color: var(--gold);
   }
 `;
 
-export const NewsItemContainer = styled.div`
+export const Container = styled.div`
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.6rem;
-  width: 35.8rem;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 3rem;
+  @media screen and (min-width: 1200px) {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 8rem 0;
+    gap: 7rem;
+  }
+`;
 
+export const HeadingContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
   .sub-heading,
   .link {
     font-size: 1.2rem;
@@ -31,7 +39,6 @@ export const NewsItemContainer = styled.div`
 
   .heading,
   strong {
-    width: 30rem;
     font-size: 4rem;
     line-height: 4.5rem;
     font-weight: 700;
@@ -42,8 +49,6 @@ export const NewsItemContainer = styled.div`
     }
   }
   .paragraph {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
     font-size: 1.6rem;
     color: var(--gray-paragraph);
     font-weight: 400;
@@ -52,6 +57,48 @@ export const NewsItemContainer = styled.div`
 
   .link {
     margin-bottom: 3rem;
+  }
+  @media screen and (min-width: 968px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 2.5rem;
+    .right-container,
+    .left-container {
+      width: 100%;
+    }
+    .heading {
+      width: 100%;
+    }
+  }
+`;
+
+export const NewsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0;
+  }
+`;
+
+export const NewsItemContainer = styled.div`
+  width: 100%;
+  height: 44rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 `;
 
