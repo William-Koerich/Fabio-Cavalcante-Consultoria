@@ -69,4 +69,11 @@ export const CardContainer = styled.div`
   justify-content: center;
   padding: 2rem;
   gap: 1.5rem;
+
+  @media screen and (min-width: 968px) {
+    max-width: 1240px;
+    width: 100%;
+    padding: 2rem 0;
+    margin: 0 auto;
+  }
 `;
