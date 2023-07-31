@@ -4,6 +4,11 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    width: 1240px;
+    height: 77rem;
+  }
 `;
 
 export const FormContainer = styled.div`
@@ -15,10 +20,9 @@ export const FormContainer = styled.div`
   width: 35.8rem;
   height: 43.1rem;
 
-  @media screen and (min-width:1200px){
-    width:98.4rem;
+  @media screen and (min-width: 1200px) {
+    width: 98.4rem;
   }
-
 `;
 
 export const Title = styled.span`

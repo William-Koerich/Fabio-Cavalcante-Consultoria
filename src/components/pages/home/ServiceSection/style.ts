@@ -32,4 +32,32 @@ export const Container = styled.section`
     font-weight: 400;
     font-family: "Roboto", sans-serif;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6rem 0 4rem;
+    .sub-heading {
+      font-size: 0.8rem;
+    }
+    .heading,
+    strong {
+      font-size: 1.9rem;
+      line-height: 2rem;
+    }
+    .left-container,
+    .right-container {
+      height: 9rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .right-container {
+      width: 100%;
+      line-height: 2.5rem;
+      gap: 1.5rem;
+    }
+  }
 `;

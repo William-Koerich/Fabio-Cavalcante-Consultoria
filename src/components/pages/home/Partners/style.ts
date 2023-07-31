@@ -4,8 +4,10 @@ export const PartnersContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   @media screen and (min-width: 968px) {
+    width: 100%;
+    max-width: 1240px;
     margin-top: 30rem;
   }
 `;
