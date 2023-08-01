@@ -35,16 +35,21 @@ export function Card({
   paddingRight,
 }: IProps) {
   return (
-    <S.Container 
+    <S.Container
       $bgColor={bgColor}
-      $borderColor={borderColor} 
-      $paddingBottom={paddingBottom} 
-      $paddingLeft={paddingLeft} 
-      $paddingRight={paddingRight} 
+      $borderColor={borderColor}
+      $paddingBottom={paddingBottom}
+      $paddingLeft={paddingLeft}
+      $paddingRight={paddingRight}
       $paddingTop={paddingTop}
     >
       <div className="profile-container">
-        <Image src={imgSrc} alt={title} width={widthImage} height={heightImage} />
+        <Image
+          src={imgSrc}
+          alt={title}
+          width={widthImage}
+          height={heightImage}
+        />
         <h4 className="heading">{title}</h4>
       </div>
       <p className="paragraph">{description} </p>

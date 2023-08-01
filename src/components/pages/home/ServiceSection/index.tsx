@@ -71,19 +71,19 @@ export function ServiceSection() {
           />
         </S.ImageContainer>
         <S.ImageContainer>
-          <Card 
-            imgSrc="/images/Patent.png" 
-            type="service" 
-            title="Patent" 
+          <Card
+            imgSrc="/images/Patent.png"
+            type="service"
+            title="Patent"
             widthImage={280}
             heightImage={250}
           />
         </S.ImageContainer>
         <S.ImageContainer>
-          <Card 
-            imgSrc="/images/DWI-DUI.png" 
-            type="service" 
-            title="DWI/DUI" 
+          <Card
+            imgSrc="/images/DWI-DUI.png"
+            type="service"
+            title="DWI/DUI"
             widthImage={280}
             heightImage={250}
           />
