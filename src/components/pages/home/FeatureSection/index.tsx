@@ -9,6 +9,7 @@ export function FeatureSection() {
   return (
     <S.Container>
       <Card
+        type="professional-services"
         key={"ProfessionalServices"}
         title="Professional Services"
         description="
@@ -21,6 +22,7 @@ export function FeatureSection() {
         imgSrc={featureIcon}
       />
       <Card
+        type="professional-services"
         key={"Top Legal Experts"}
         title="Top Legal Experts"
         description="
@@ -34,6 +36,7 @@ export function FeatureSection() {
         bgColor="var(--white)"
       />
       <Card
+        type="professional-services"
         key={"Competitive pricing"}
         title="Competitive pricing"
         description="
