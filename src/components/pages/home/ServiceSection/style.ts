@@ -3,6 +3,16 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    max-width: 1240px;
+  }
+`;
+
+export const TextContainer = styled.div`
+  width: 100%;
+  display: flex;
   flex-direction: column;
   padding: 2rem;
   gap: 1.5rem;
@@ -54,6 +64,9 @@ export const Container = styled.section`
       display: flex;
       flex-direction: column;
     }
+    .left-container {
+      gap: 0.5rem;
+    }
     .right-container {
       width: 100%;
       line-height: 2.5rem;
@@ -63,17 +76,23 @@ export const Container = styled.section`
 `;
 
 export const CardContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   padding: 2rem;
-  gap: 1.5rem;
-
-  @media screen and (min-width: 968px) {
-    max-width: 1240px;
-    width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
     padding: 2rem 0;
-    margin: 0 auto;
+  }
+`;
+
+export const ImageContainer = styled.div`
+  position: relative;
+  height: 26.8rem;
+  @media screen and (max-width: 968px) {
+    img {
+      width: 100%;
+    }
   }
 `;

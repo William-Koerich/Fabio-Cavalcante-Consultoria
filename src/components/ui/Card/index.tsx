@@ -25,7 +25,7 @@ export function Card({
   return (
     <S.Container bgColor={bgColor} borderColor={borderColor}>
       <div className="profile-container">
-        <Image src={imgSrc} alt={title} width={270} height={250} />
+        <Image src={imgSrc} alt={title} width={280} height={250} />
         <h4 className="heading">{title}</h4>
       </div>
       <p className="paragraph">{description} </p>

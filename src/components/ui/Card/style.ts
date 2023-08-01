@@ -4,8 +4,8 @@ export const Container = styled.div<{
   bgColor?: string;
   borderColor?: string;
 }>`
-  /* width: 100%; */
-  /* height: 100%; */
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -17,6 +17,7 @@ export const Container = styled.div<{
     display: flex;
     justify-content: space-beetween;
     flex-direction: column;
+    gap: 1rem;
     .heading {
       font-size: 1.6rem;
       font-weight: 700;
