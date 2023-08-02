@@ -87,6 +87,7 @@ export const LeftContainer = styled.div`
     width: 100%;
     display: flex;
     padding: 2rem;
+    margin: 0;
     .container {
       width: 100%;
     }
