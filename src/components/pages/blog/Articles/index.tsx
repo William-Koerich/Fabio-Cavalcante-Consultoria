@@ -4,7 +4,7 @@ import * as S from "./style";
 export function Articles() {
   return (
     <S.Container>
-      <ArticleCard />
+      {/* <ArticleCard /> */}
     </S.Container>
   );
 }

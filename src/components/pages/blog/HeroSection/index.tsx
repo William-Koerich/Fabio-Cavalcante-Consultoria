@@ -6,8 +6,10 @@ interface IProps {
 
 export function HeroSection({ title }: IProps) {
   return (
-    <S.Container>
-      <h1 className="heading">{title ?? "unknow"}</h1>
-    </S.Container>
+    <S.Section>
+      <S.Container>
+        <h1 className="heading">{title ?? "unknow"}</h1>
+      </S.Container>
+    </S.Section>
   );
 }

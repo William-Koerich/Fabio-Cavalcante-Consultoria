@@ -22,6 +22,7 @@ export const MainContainer = styled.div`
 export const Logo = styled.div`
   font-size: 18px;
   font-weight: bold;
+  cursor: pointer;
 `;
 
 export const MenuButton = styled.button`

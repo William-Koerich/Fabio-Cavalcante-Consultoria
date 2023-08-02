@@ -24,10 +24,10 @@ export function Header() {
           <Link className="menu-item" href="/">
             <li>Home</li>
           </Link>
-          <Link className="menu-item" href="/">
+          <Link className="menu-item" href="/#services">
             <li>Serviços</li>
           </Link>
-          <Link className="menu-item" href="/">
+          <Link className="menu-item" href="/#partners">
             <li>Clientes</li>
           </Link>
           <Link className="menu-item" href="/">
@@ -36,7 +36,7 @@ export function Header() {
           <Link className="menu-item" href="/blog">
             <li>Notícias</li>
           </Link>
-          <Link className="menu-item" href="/">
+          <Link className="menu-item" href="/#contact">
             <li>Contato</li>
           </Link>
         </S.MenuOptions>

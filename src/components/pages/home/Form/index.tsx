@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/Button'
 export function Form() {
     return (
         <>
-            <S.Container>
+            <S.Container id="contact">
                 <S.FormContainer>
                     <S.Title>Get Free Quote</S.Title>
                         <S.Input type="text" placeholder="Name" />

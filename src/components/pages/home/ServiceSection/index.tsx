@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/Card";
 
 export function ServiceSection() {
   return (
-    <S.Container>
+    <S.Container id="services">
       <S.TextContainer>
         <div className="left-container">
           <h6 className="sub-heading">PRATICE AREAS</h6>

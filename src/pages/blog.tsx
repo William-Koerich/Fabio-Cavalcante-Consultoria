@@ -1,4 +1,5 @@
 import { GetStaticProps } from "next";
+import * as S from "@/styles/pages/Home";
 
 import { HeroSection } from "@/components/pages/blog/HeroSection";
 import { Header } from "@/components/global/Header";
@@ -13,13 +14,13 @@ interface IProps {
 
 export default function Blog({ articles }: IProps) {
   return (
-    <>
+    <S.Container>
       <Header />
       <HeroSection title={"Blog"} />
       <NewsSection />
-      <Articles />
+      {/* <Articles /> */}
       <Footer />
-    </>
+    </S.Container>
   );
 }
 
