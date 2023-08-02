@@ -40,7 +40,7 @@ export const Container = styled.div`
     font-weight: 400;
     line-height: 2rem;
     color: var(--gray);
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   strong {
     color: var(--green);
