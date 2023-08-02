@@ -7,6 +7,7 @@ export const Main = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  overflow-x: hidden;
 `;
 
 export const Container = styled.main`

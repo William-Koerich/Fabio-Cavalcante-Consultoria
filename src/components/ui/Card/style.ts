@@ -1,17 +1,24 @@
 import styled from "styled-components";
 
 export const Container = styled.div<{
-  bgColor?: string;
-  borderColor?: string;
+  $bgColor?: string;
+  $borderColor?: string;
+  $paddingTop?: string;
+  $paddingBottom?: string;
+  $paddingRight?: string;
+  $paddingLeft?: string;
 }>`
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* padding: 4rem 2rem; */
-  /* background-color: ${({ bgColor }) => bgColor ?? "#f1f5f7"}; */
-  /* border: 1px solid ${({ borderColor }) => borderColor ?? "#f1f5f7"}; */
+  padding-top: ${({$paddingTop}) => $paddingTop ?? '0'};
+  padding-bottom: ${({$paddingBottom}) => $paddingBottom ?? '0'};
+  padding-right: ${({$paddingRight}) => $paddingRight ?? '0'};
+  padding-left: ${({$paddingLeft}) => $paddingLeft ?? '0'};
+  background-color: ${({ $bgColor }) => $bgColor ?? ""};
+  /* border: 1px solid ${({ $borderColor }) => $borderColor ?? "#f1f5f7"}; */
   gap: 2rem;
   .profile-container {
     display: flex;

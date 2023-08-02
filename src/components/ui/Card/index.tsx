@@ -11,6 +11,12 @@ interface IProps {
   borderColor?: string;
   bgColor?: string;
   type: string;
+  widthImage: number;
+  heightImage: number;
+  paddingTop?: string;
+  paddingBottom?: string;
+  paddingLeft?: string;
+  paddingRight?: string;
 }
 
 export function Card({
@@ -21,11 +27,24 @@ export function Card({
   description,
   href,
   type,
+  widthImage,
+  heightImage,
+  paddingTop,
+  paddingBottom,
+  paddingLeft,
+  paddingRight,
 }: IProps) {
   return (
-    <S.Container bgColor={bgColor} borderColor={borderColor}>
+    <S.Container 
+      $bgColor={bgColor}
+      $borderColor={borderColor} 
+      $paddingBottom={paddingBottom} 
+      $paddingLeft={paddingLeft} 
+      $paddingRight={paddingRight} 
+      $paddingTop={paddingTop}
+    >
       <div className="profile-container">
-        <Image src={imgSrc} alt={title} width={280} height={250} />
+        <Image src={imgSrc} alt={title} width={widthImage} height={heightImage} />
         <h4 className="heading">{title}</h4>
       </div>
       <p className="paragraph">{description} </p>

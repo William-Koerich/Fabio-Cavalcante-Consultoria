@@ -20,6 +20,14 @@ export function FeatureSection() {
         "
         href="/"
         imgSrc={featureIcon}
+        widthImage={96}
+        heightImage={96}
+        bgColor="var(--background)"
+        paddingTop="4rem"
+        paddingBottom="4rem"
+        paddingLeft="2rem"
+        paddingRight="2rem"
+
       />
       <Card
         type="professional-services"
@@ -34,6 +42,12 @@ export function FeatureSection() {
         href="/"
         imgSrc={downIcon}
         bgColor="var(--white)"
+        widthImage={96}
+        heightImage={96}
+        paddingTop="4rem"
+        paddingBottom="4rem"
+        paddingLeft="2rem"
+        paddingRight="2rem"
       />
       <Card
         type="professional-services"
@@ -47,6 +61,13 @@ export function FeatureSection() {
         "
         href="/"
         imgSrc={medalIcon}
+        widthImage={96}
+        heightImage={96}
+        bgColor="var(--background)"
+        paddingTop="4rem"
+        paddingBottom="4rem"
+        paddingLeft="2rem"
+        paddingRight="2rem"
       />
     </S.Container>
   );
